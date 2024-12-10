@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,18 @@
 </head>
 
 <body class="bg-gray-300">
-    <header class="flex justify-between bg-slate-900 text-white" >
-    <div class="flex items-center gap-5">
-        <img src="./img/index.png" alt="logo">
-        <h1 class="font-bold">Survey</h1>
-    </div>
-    <nav class="flex items-center">
-        <ul class="flex gap-5">
-            <li class=""><a href="">Home</a></li>
-            <li class=""><a href="">Survey</a></li>
-            <li class=""><a href="">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="flex justify-between bg-slate-900 text-white">
+        <div class="flex items-center gap-5">
+            <img src="./img/index.png" alt="logo">
+            <h1 class="font-bold">Survey</h1>
+        </div>
+        <nav class="flex items-center">
+            <ul class="flex gap-5">
+                <li class=""><a href="">Home</a></li>
+                <li class=""><a href="">Survey</a></li>
+                <li class=""><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="flex m-5 gap-5 justify-center ">
@@ -34,9 +35,79 @@
             </ul>
         </aside>
         <section class="bg-white py-3 px-5">
-            <h1>General</h1>
+            <p class="font-extralight text-xs">survey-2 / Question-2</p>
+            <form>
+                <h2 class="font-extrabold">General Information</h1>
+                    <div class="flex gap-5">
+                        <div class="gap-1 flex flex-col">
+                            <label for="firstname">First Name</label>
+                            <input class="border-solid border-black border-2 rounded-md" type="text" id="firstname">
+                        </div>
+                        <div class="gap-1 flex flex-col">
+                            <label for="lastname">Last Name</label>
+                            <input class="border-solid border-black border-2 rounded-md" type="text" id="lastname">
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="gap-1 flex flex-col">
+                            <label for="email">Email Address</label>
+                            <input class="border-solid border-black border-2 rounded-md" type="email" id="email">
+                        </div>
+                        <div class="gap-1 flex flex-col">
+                            <label for="age">Age</label>
+                            <input class="border-solid border-black border-2 rounded-md" type="number" id="age">
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+
+                        <div class="flex flex-col">
+                            <h2 class="font-extrabold">Multiple-Choice Question</h1>
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" class="option1">
+
+                                    <div class="flex flex-col">
+                                        <label class="" for="option1">Option 1</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 1</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" class="option2">
+
+                                    <div class="flex flex-col">
+                                        <label class="" for="option2">Option 2</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" id="option3">
+
+                                    <div class="flex flex-col">
+                                        <label class="" for="option3">Option 3</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" id="option4">
+
+                                    <div class="flex flex-col">
+                                        <label class="" for="option4">Option 4</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                    </div>
+                                </div>
+
+
+                        </div>
+                        <h2 class="font-extrabold">Single-Choice Question</h1>
+                    </div>
+                    <h2 class="font-extrabold">Select-Option Question</h1>
+                        <h2 class="font-extrabold">Free Answer Question</h1>
+            </form>
         </section>
     </main>
 
 </body>
+
 </html>
