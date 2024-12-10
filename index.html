@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind CSS Exercise</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-    <nav></nav>
+<body class="font-mono">
+    <header class="flex justify-between bg-slate-900 text-white" >
+    <div class="flex items-center gap-5">
+        <img src="./img/index.png" alt="logo">
+        <h1 class="font-bold">Survey</h1>
+    </div>
+    <nav class="flex items-center">
+        <ul class="flex gap-5">
+            <li class=""><a href="">Home</a></li>
+            <li class=""><a href="">Survey</a></li>
+            <li class=""><a href="">Contact</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
         <aside></aside>
         <section></section>
     </main>
-    
+
 </body>
 </html>
