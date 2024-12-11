@@ -11,7 +11,7 @@
         <!-- ----- Header ----- -->
         <header class="bg-slate-900 text-white font-bold border-solid border-b-2 border-white drop-shadow-lg">
             <div class="flex justify-between max-w-screen-lg mx-auto">
-                <div class="flex items-center gap-3 my-3.5 mx-5">
+                <div class="flex items-center gap-3 my-3.5 mx-9">
                     <img class="" src="./img/index.png" alt="logo" />
                     <h1 class="text-3xl">Surway</h1>
                 </div>
@@ -62,7 +62,8 @@
             <!-- ----- Section ----- -->
             <section class="bg-white w-10/12 mr-5 rounded-lg border-y border-x border-gray-400 drop-shadow-lg">
                 <p class="font-light text-xs mt-3 mx-5">Survey-2/Question-2</p>
-                <form class="mt-2 mx-10">
+                <form class="mt-4 mx-10">
+                    <!-- ----- General ----- -->
                     <h2 class="font-bold mb-2">General Information</h2>
                     <div class="flex gap-5 mb-4">
                         <div class="gap-1 flex flex-col">
@@ -84,86 +85,86 @@
                             <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="number" id="age" />
                         </div>
                     </div>
-                    <div class="flex gap-3">
+                    <!-- ----- Multiple ----- -->
+                    <div class="flex gap-x-16 mt-4">
                         <div class="flex flex-col">
-                            <h2 class="font-extrabold">Multiple-Choice Question</h2>
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="checkbox" id="checkbox1" />
-
-                                <div class="flex flex-col">
-                                    <label class="" for="checkbox1">Option 1</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 1</p>
+                            <h2 class="font-bold">Multiple-Choice Question</h2>
+                            <div class="ml-5">
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" id="checkbox1" />
+                                    <div class="flex flex-col">
+                                        <label class="" for="checkbox1">Option 1</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 1</p>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="checkbox" id="checkbox2" />
-
-                                <div class="flex flex-col">
-                                    <label class="" for="checkbox2">Option 2</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" id="checkbox2" />
+                                    <div class="flex flex-col">
+                                        <label class="" for="checkbox2">Option 2</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="checkbox" id="checkbox3" />
-
-                                <div class="flex flex-col">
-                                    <label class="" for="checkbox3">Option 3</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" id="checkbox3" />
+                                    <div class="flex flex-col">
+                                        <label class="" for="checkbox3">Option 3</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="checkbox" id="checkbox4" />
-
-                                <div class="flex flex-col">
-                                    <label class="" for="checkbox4">Option 4</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="checkbox" id="checkbox4" />
+                                    <div class="flex flex-col">
+                                        <label class="" for="checkbox4">Option 4</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- ----- Single ----- -->
                         <div class="flex flex-col">
-                            <h2 class="font-extrabold">Single-Choice Question</h2>
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="radio" id="radio1" name="radio" />
+                            <h2 class="font-bold">Single-Choice Question</h2>
+                            <div class="ml-5">
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="radio" id="radio1" name="radio" />
 
-                                <div class="flex flex-col">
-                                    <label class="" for="radio1">Option 1</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 1</p>
+                                    <div class="flex flex-col">
+                                        <label class="" for="radio1">Option 1</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 1</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="radio" id="radio2" name="radio" />
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="radio" id="radio2" name="radio" />
 
-                                <div class="flex flex-col">
-                                    <label class="" for="radio2">Option 2</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                    <div class="flex flex-col">
+                                        <label class="" for="radio2">Option 2</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="radio" id="radio3" name="radio" />
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="radio" id="radio3" name="radio" />
 
-                                <div class="flex flex-col">
-                                    <label class="" for="radio3">Option 3</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                    <div class="flex flex-col">
+                                        <label class="" for="radio3">Option 3</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex gap-2 items-start">
-                                <input class="mt-1.5" type="radio" id="radio4" name="radio" />
+                                <div class="flex gap-2 items-start">
+                                    <input class="mt-1.5" type="radio" id="radio4" name="radio" />
 
-                                <div class="flex flex-col">
-                                    <label class="" for="radio4">Option 4</label>
-                                    <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                    <div class="flex flex-col">
+                                        <label class="" for="radio4">Option 4</label>
+                                        <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- ----- Select ----- -->
                     <h2 class="font-extrabold">Select-Option Question</h2>
                     <label for="selectbox"></label>
                     <p class="font-extralight text-sm">Description</p>
