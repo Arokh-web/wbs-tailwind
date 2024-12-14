@@ -1,198 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tailwind CSS Exercise</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
 
-    <body class="bg-gray-300">
-        <!-- ----- Header ----- -->
-        <header class="bg-slate-900 text-white font-bold border-solid border-b-2 border-white drop-shadow-lg">
-            <div class="flex justify-between max-w-screen-lg mx-auto">
-                <div class="flex items-center gap-3 my-3.5 mx-9">
-                    <img class="" src="./img/index.png" alt="logo" />
-                    <h1 class="text-3xl">Surway</h1>
-                </div>
-                <nav class="my-auto">
-                    <ul class="flex gap-4 mx-5">
-                        <li class=""><a href="">Home</a></li>
-                        <li class=""><a class="bg-pink-600 p-1.5 rounded-md" href="">Survey</a></li>
-                        <li class=""><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Exercise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-300">
+
+    <!-- ----- Header ----- -->
+    <header class="bg-slate-900 text-white font-bold border-solid border-b-2 border-white drop-shadow-lg">
+        <div class="flex justify-between max-w-screen-lg mx-auto">
+            <div class="flex items-center gap-3 my-3.5 mx-9">
+                <img class="" src="./img/index.png" alt="logo" />
+                <h1 class="text-3xl">Surway</h1>
             </div>
-        </header>
-
-        <!-- ----- Main ----- -->
-        <main class="flex m-5 gap-5 justify-center max-w-screen-lg mx-auto">
-            <!-- ----- Aside ----- -->
-            <aside class="bg-white px-5 py-3 w-60 ml-5 rounded-lg border-y border-x border-gray-400 drop-shadow-lg">
-                <h2 class="font-bold text-xl mb-2">Surveys</h2>
-                <h3 class="pl-5 font-bold mb-1">Survey 1</h3>
-                <ul class="pl-9 text-sm leading-relaxed">
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
+            <nav class="my-auto">
+                <ul class="flex gap-4 mx-5">
+                    <li class=""><a class="hover:bg-pink-600 hover:p-1.5 hover:rounded-md" href="">Home</a></li>
+                    <li class=""><a class="bg-pink-600 p-1.5 rounded-md" href="">Survey</a></li>
+                    <li class=""><a class="hover:bg-pink-600 hover:p-1.5 hover:rounded-md" href="">Contact</a></li>
                 </ul>
-                <h3 class="pl-5 font-bold mb-1">Survey 2</h3>
-                <ul class="pl-9 text-sm leading-relaxed">
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
-                </ul>
-                <h3 class="pl-5 font-bold mb-1">Survey 3</h3>
-                <ul class="pl-9 text-sm leading-relaxed">
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
-                </ul>
-                <h3 class="pl-5 font-bold mb-1">Survey 4</h3>
-                <ul class="pl-9 text-sm leading-relaxed">
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
-                    <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
-                </ul>
-            </aside>
-            <!-- ----- Section ----- -->
-            <section class="bg-white w-10/12 mr-5 rounded-lg border-y border-x border-gray-400 drop-shadow-lg">
-                <p class="font-light text-xs mt-3 mx-5">Survey-2/Question-2</p>
-                <form class="mt-5 mx-10">
-                    <!-- ----- General ----- -->
-                    <h2 class="font-bold mb-2">General Information</h2>
-                    <div class="flex gap-5 mb-4 ml-5">
-                        <div class="gap-1 flex flex-col">
-                            <label class="text-sm" for="firstname">First Name</label>
-                            <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="text" id="firstname" />
-                        </div>
-                        <div class="gap-1 flex flex-col">
-                            <label class="text-sm" for="lastname">Last Name</label>
-                            <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="text" id="lastname" />
-                        </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ----- Main ----- -->
+    <main class="flex m-5 gap-5 justify-center max-w-screen-lg mx-auto">
+        <!-- ----- Aside ----- -->
+        <aside class="bg-white px-5 py-3 w-60 ml-5 rounded-lg border-y border-x border-gray-400 drop-shadow-lg">
+            <h2 class="font-bold text-xl mb-2">Surveys</h2>
+            <h3 class="pl-5 font-bold mb-1">Survey 1</h3>
+            <ul class="pl-9 text-sm leading-relaxed">
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
+            </ul>
+            <h3 class="pl-5 font-bold mb-1">Survey 2</h3>
+            <ul class="pl-9 text-sm leading-relaxed">
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
+            </ul>
+            <h3 class="pl-5 font-bold mb-1">Survey 3</h3>
+            <ul class="pl-9 text-sm leading-relaxed">
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
+            </ul>
+            <h3 class="pl-5 font-bold mb-1">Survey 4</h3>
+            <ul class="pl-9 text-sm leading-relaxed">
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 1</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 2</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 3</a></li>
+                <li class=""><a href="" class="hover:text-pink-600 hover:underline">Question 4</a></li>
+            </ul>
+        </aside>
+
+        <!-- ----- Section ----- -->
+        <section class="bg-white w-10/12 mr-5 rounded-lg border-y border-x border-gray-400 drop-shadow-lg">
+            <p class="font-light text-xs mt-3 mx-5">Survey-2/Question-2</p>
+            <form class="mt-5 mx-10">
+
+                <!-- ----- General ----- -->
+                <h2 class="font-bold mb-2">General Information</h2>
+                <div class="flex gap-5 mb-4 ml-5">
+                    <div class="gap-1 flex flex-col">
+                        <label class="text-sm" for="firstname">First Name</label>
+                        <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="text"
+                            id="firstname" />
                     </div>
-                    <div class="flex gap-5 ml-5">
-                        <div class="gap-1 flex flex-col">
-                            <label class="text-sm" for="email">Email Address</label>
-                            <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="email" id="email" />
-                        </div>
-                        <div class="gap-1 flex flex-col">
-                            <label class="text-sm" for="age">Age</label>
-                            <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="number" id="age" />
-                        </div>
+                    <div class="gap-1 flex flex-col">
+                        <label class="text-sm" for="lastname">Last Name</label>
+                        <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="text"
+                            id="lastname" />
                     </div>
-                    <!-- ----- Multiple ----- -->
-                    <div class="flex gap-x-16 mt-5">
-                        <div class="flex flex-col">
-                            <h2 class="font-bold mb-2">Multiple-Choice Question</h2>
-                            <div class="ml-5">
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="checkbox" id="checkbox1" />
-                                    <div class="flex flex-col">
-                                        <label class="" for="checkbox1">Option 1</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 1</p>
-                                    </div>
-                                </div>
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="checkbox" id="checkbox2" />
-                                    <div class="flex flex-col">
-                                        <label class="" for="checkbox2">Option 2</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 2</p>
-                                    </div>
-                                </div>
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="checkbox" id="checkbox3" />
-                                    <div class="flex flex-col">
-                                        <label class="" for="checkbox3">Option 3</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 3</p>
-                                    </div>
-                                </div>
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="checkbox" id="checkbox4" />
-                                    <div class="flex flex-col">
-                                        <label class="" for="checkbox4">Option 4</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 4</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ----- Single ----- -->
-                        <div class="flex flex-col">
-                            <h2 class="font-bold mb-2">Single-Choice Question</h2>
-                            <div class="ml-5">
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="radio" id="radio1" name="radio" />
-
-                                    <div class="flex flex-col">
-                                        <label class="" for="radio1">Option 1</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 1</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="radio" id="radio2" name="radio" />
-
-                                    <div class="flex flex-col">
-                                        <label class="" for="radio2">Option 2</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 2</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="radio" id="radio3" name="radio" />
-
-                                    <div class="flex flex-col">
-                                        <label class="" for="radio3">Option 3</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 3</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex gap-2 items-start">
-                                    <input class="mt-1.5" type="radio" id="radio4" name="radio" />
-
-                                    <div class="flex flex-col">
-                                        <label class="" for="radio4">Option 4</label>
-                                        <p class="font-extralight text-sm">Desc. for Option 4</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ----- Select ----- -->
-                    <h2 class="font-bold mt-5 mb-2">Select-Option Question</h2>
-                    <label for="selectbox"></label>
-                    <div class="ml-5">
-                        <p class="font-extralight text-sm mb-1">Description</p>
-                        <select name="selectbox" id="selectbox" class="border-solid border-gray-500 border-y border-x rounded-md w-60">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                            <option value="option4">Option 4</option>
-                        </select>
-                    </div>
-
-                    <!-- ----- Select ----- -->
-                    <h2 class="font-bold mt-5 mb-2">Free Answer Question</h2>
-                    <div class="ml-5">
-                        <label for="textfield"></label>
-                        <p class="font-extralight text-sm mb-1">Description</p>
-                        <textarea name="textfield" id="textfield" class="border-solid border-gray-500 border-y border-x rounded-md w-60"></textarea>
-                    </div>
-                </form>
-
-                <!-- ----- Textarea ----- -->
-                <div class="flex justify-end gap-3 mr-5 mb-3">
-                    <button class="bg-pink-400 py-1.5 px-4 text-white rounded-xl font-bold">Back</button>
-                    <button class="bg-pink-500 py-1.5 px-4 text-white rounded-xl font-bold">Save</button>
-                    <button class="bg-pink-600 py-1.5 px-4 text-white rounded-xl font-bold">Next</button>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="flex gap-5 ml-5">
+                    <div class="gap-1 flex flex-col">
+                        <label class="text-sm" for="email">Email Address</label>
+                        <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="email"
+                            id="email" />
+                    </div>
+                    <div class="gap-1 flex flex-col">
+                        <label class="text-sm" for="age">Age</label>
+                        <input class="border-solid border-gray-500 border-y border-x rounded-md w-60" type="number"
+                            id="age" />
+                    </div>
+                </div>
+
+                <!-- ----- Multiple ----- -->
+                <div class="flex gap-x-16 mt-5">
+                    <div class="flex flex-col">
+                        <h2 class="font-bold mb-2">Multiple-Choice Question</h2>
+                        <div class="ml-5">
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="checkbox" id="checkbox1" />
+                                <div class="flex flex-col">
+                                    <label class="" for="checkbox1">Option 1</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 1</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="checkbox" id="checkbox2" />
+                                <div class="flex flex-col">
+                                    <label class="" for="checkbox2">Option 2</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="checkbox" id="checkbox3" />
+                                <div class="flex flex-col">
+                                    <label class="" for="checkbox3">Option 3</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="checkbox" id="checkbox4" />
+                                <div class="flex flex-col">
+                                    <label class="" for="checkbox4">Option 4</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----- Single ----- -->
+                    <div class="flex flex-col">
+                        <h2 class="font-bold mb-2">Single-Choice Question</h2>
+                        <div class="ml-5">
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="radio" id="radio1" name="radio" />
+
+                                <div class="flex flex-col">
+                                    <label class="" for="radio1">Option 1</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 1</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="radio" id="radio2" name="radio" />
+
+                                <div class="flex flex-col">
+                                    <label class="" for="radio2">Option 2</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 2</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="radio" id="radio3" name="radio" />
+
+                                <div class="flex flex-col">
+                                    <label class="" for="radio3">Option 3</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 3</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-2 items-start">
+                                <input class="mt-1.5" type="radio" id="radio4" name="radio" />
+
+                                <div class="flex flex-col">
+                                    <label class="" for="radio4">Option 4</label>
+                                    <p class="font-extralight text-sm">Desc. for Option 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----- Select ----- -->
+                <h2 class="font-bold mt-5 mb-2">Select-Option Question</h2>
+                <label for="selectbox"></label>
+                <div class="ml-5">
+                    <p class="font-extralight text-sm mb-1">Description</p>
+                    <select name="selectbox" id="selectbox"
+                        class="border-solid border-gray-500 border-y border-x rounded-md w-60">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                    </select>
+                </div>
+
+                <!-- ----- Select ----- -->
+                <h2 class="font-bold mt-5 mb-2">Free Answer Question</h2>
+                <div class="ml-5">
+                    <label for="textfield"></label>
+                    <p class="font-extralight text-sm mb-1">Description</p>
+                    <textarea name="textfield" id="textfield"
+                        class="border-solid border-gray-500 border-y border-x rounded-md w-60"></textarea>
+                </div>
+            </form>
+
+            <!-- ----- Textarea ----- -->
+            <div class="flex justify-end gap-3 mr-5 mb-3">
+                <button class="bg-pink-400 py-1.5 px-4 text-white rounded-xl font-bold">Back</button>
+                <button class="bg-pink-500 py-1.5 px-4 text-white rounded-xl font-bold">Save</button>
+                <button class="bg-pink-600 py-1.5 px-4 text-white rounded-xl font-bold">Next</button>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-white">
+        <div class="flex  flex-col justify-center max-w-screen-lg mx-auto items-center">
+            <div class="flex items-center gap-3 mt-3.5 mx-9">
+                <img class="w-7 h-auto" src="./img/index.png" alt="logo" />
+                <h1 class="text-l font-bold">Surway</h1>
+            </div>
+            <ul class="flex gap-4 mx-5 mt-2">
+                <li class=""><a class="hover:underline" href="">Home</a></li>
+                <li class=""><a class="hover:underline" href="">Survey</a></li>
+                <li class=""><a class="hover:underline" href="">Contact</a></li>
+            </ul>
+            <p class="text-sm mb-2">
+                Copyright @Michaela Budich, Rupinder Singh
+            </p>
+        </div>
+    </footer>
+</body>
+
 </html>
